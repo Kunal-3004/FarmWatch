@@ -4,11 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     tools:context=".SignupActivity">
-    <data>
-        <variable
-            name="authViewModel"
-            type="com.example.farmwatch.viewModel.AuthViewModel" />
-    </data>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -67,7 +62,6 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/nameEditSignup"
-                    android:text="@={authViewModel.name}"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:backgroundTint="#0060AA39"
@@ -92,7 +86,6 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/numberEditSignup"
-                    android:text="@={authViewModel.mobNo}"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="18sp"
@@ -115,7 +108,6 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/emailEditSignup"
-                    android:text="@={authViewModel.email}"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:backgroundTint="#0060AA39"
@@ -138,7 +130,6 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/cityEditSignup"
-                    android:text="@={authViewModel.city}"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:backgroundTint="#0060AA39"
@@ -160,7 +151,6 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/passwdEditSignup"
-                    android:text="@={authViewModel.password}"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:backgroundTint="#0060AA39"
@@ -183,7 +173,6 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/confPasswdEditSignup"
-                    android:text="@={authViewModel.confPassword}"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:backgroundTint="#0060AA39"
@@ -195,7 +184,6 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.button.MaterialButton
-                android:onClick="@{authViewModel::signupButtonClicked}"
                 android:id="@+id/signupBtnSignup"
                 android:layout_width="100dp"
                 android:layout_height="60dp"

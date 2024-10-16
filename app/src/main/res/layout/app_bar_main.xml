@@ -14,7 +14,7 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNav"
         android:layout_width="match_parent"
-        android:layout_height="64dp"
+        android:layout_height="70dp"
         app:menu="@menu/dash_menu"
         app:itemIconTint="@null"
         app:labelVisibilityMode="labeled"
