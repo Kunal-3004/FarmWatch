@@ -14,6 +14,10 @@
     <color name="colorThird">#fc7557</color>
     <color name="greenDark">#359701</color>
     <color name="hintColor">#636161</color>
+    <color name="black">#FF000000</color>
+    <color name="brown">#BC6931</color>
+    <color name="inactive">#8B8B8B</color>
+    <color name="active">#3F3F3F</color>
 
     <color name="chip">
         <selector xmlns:android="http://schemas.android.com/apk/res/android">
