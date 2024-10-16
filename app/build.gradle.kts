@@ -28,6 +28,7 @@ android {
     }
     buildFeatures{
         viewBinding=true
+        dataBinding=true
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
@@ -49,5 +50,5 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    implementation ("com.google.android.gms:play-services-auth:20.7.0")
+    implementation(kotlin("script-runtime"))
 }

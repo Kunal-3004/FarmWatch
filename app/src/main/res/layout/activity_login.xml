@@ -3,8 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     tools:context=".LoginActivity">
 
     <ScrollView
@@ -29,8 +27,7 @@
                 app:layout_constraintBottom_toTopOf="@id/title2TextLogin"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                />
+                app:layout_constraintTop_toTopOf="parent"/>
 
             <TextView
                 android:id="@+id/title2TextLogin"
@@ -41,7 +38,6 @@
                 android:textColor="#fff"
                 app:layout_constraintBottom_toTopOf="@id/guide2"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/titleTextLogin" />
 
@@ -57,11 +53,10 @@
                 android:visibility="invisible"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/loginBtnLogin"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintStart_toStartOf="parent" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/emailContLogin"
@@ -80,6 +75,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:backgroundTint="#0060AA39"
+                    android:textSize="18sp"
                     android:hint="Email"
                     android:textColor="#fff"
                     android:inputType="textEmailAddress"
@@ -104,6 +100,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:backgroundTint="#0060AA39"
+                    android:textSize="18sp"
                     android:hint="Password"
                     android:inputType="textPassword"
                     android:textColor="#fff"
@@ -146,17 +143,16 @@
                 android:id="@+id/signGoogleBtnLogin"
                 android:layout_width="100dp"
                 android:layout_height="40dp"
+                android:drawableStart="@drawable/google"
                 app:layout_constraintTop_toBottomOf="@id/orTextLogin"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 android:text="Sign In"
                 android:gravity="center"
                 android:padding="8dp"
-                android:drawableLeft="5dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/whitebutton"
                 android:drawablePadding="10dp"
-                android:drawableStart="@drawable/google"
                 android:textColor="#000000"/>
 
             <TextView
