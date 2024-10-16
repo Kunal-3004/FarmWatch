@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/bottomNavWeather"
+        android:title="Weather"
+        android:icon="@drawable/rain"/>
+    <item android:id="@+id/bottomNavHome"
+        android:title="Home"
+        android:icon="@drawable/dash_home"/>
+    <item android:id="@+id/bottomNavSoil"
+        android:title="Soil Analysis"
+        android:icon="@drawable/soil"/>
+</menu>
