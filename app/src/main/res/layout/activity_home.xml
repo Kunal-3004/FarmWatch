@@ -13,7 +13,7 @@
         <include
             layout="@layout/app_bar_main"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent" />
 
         <com.google.android.material.navigation.NavigationView
             android:id="@+id/navView"
@@ -23,9 +23,8 @@
             android:background="#fff"
             android:fitsSystemWindows="true"
             app:headerLayout="@layout/nav_header"
-            app:menu="@menu/nav_drawer_menu"/>
+            app:menu="@menu/nav_drawer_menu" />
+
     </androidx.drawerlayout.widget.DrawerLayout>
-
-
 
 </layout>

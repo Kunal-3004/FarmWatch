@@ -31,6 +31,13 @@ class LoginActivity : AppCompatActivity() {
 
         auth = FirebaseAuth.getInstance()
 
+        val currentUser = auth.currentUser
+        if (currentUser != null) {
+            startActivity(Intent(this, HomeActivity::class.java))
+            finish()
+            return
+        }
+
         binding.loginBtnLogin.setOnClickListener {
             loginUserWithEmail()
         }

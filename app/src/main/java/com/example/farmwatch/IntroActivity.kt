@@ -14,10 +14,11 @@ import com.example.farmwatch.Adapter.IntroAdapter
 import com.example.farmwatch.Data.IntroData
 import androidx.viewpager2.widget.ViewPager2
 import com.example.farmwatch.databinding.ActivityIntroBinding
+import com.google.firebase.auth.FirebaseAuth
 
 class IntroActivity : AppCompatActivity() {
     private lateinit var binding: ActivityIntroBinding
-
+    private lateinit var auth: FirebaseAuth
 
     private val introSliderAdapter = IntroAdapter(
         listOf(
@@ -64,6 +65,14 @@ class IntroActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding=ActivityIntroBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        auth = FirebaseAuth.getInstance()
+
+        if (auth.currentUser != null) {
+            startActivity(Intent(this, HomeActivity::class.java))
+            finish()
+            return
+        }
 
         val nextBtn = binding.nextBtn
         val sliderViewPager=binding.sliderViewPager
