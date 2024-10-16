@@ -3,6 +3,15 @@
 
     <item
         android:id="@+id/miItem1"
+        android:title="Weather Forecast"/>
+    <item
+        android:id="@+id/miItem2"
+        android:title="Air Quality"/>
+    <item
+        android:id="@+id/miItem3"
+        android:title="Soil Analysis"/>
+    <item
+        android:id="@+id/miItem4"
         android:title="Log Out"/>
 
 
