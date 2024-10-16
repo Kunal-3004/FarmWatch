@@ -1,0 +1,71 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <!-- Sun Rays -->
+    <group
+        android:rotation="45"
+        android:pivotX="50"
+        android:pivotY="50">
+        <path
+            android:fillColor="#FFC107"
+            android:pathData="M50,10 L50,0" />
+        <path
+            android:fillColor="#FFC107"
+            android:pathData="M90,50 L100,50" />
+        <path
+            android:fillColor="#FFC107"
+            android:pathData="M50,90 L50,100" />
+        <path
+            android:fillColor="#FFC107"
+            android:pathData="M10,50 L0,50" />
+    </group>
+
+    <!-- Sun Circle with Gradient -->
+    <path
+        android:pathData="M50,30a20,20 0,1 1,-20,20a20,20 0,0 1,20,-20"
+        android:fillType="evenOdd">
+        <gradient
+            android:startX="30"
+            android:startY="30"
+            android:endX="70"
+            android:endY="70"
+            android:type="radial"
+            android:centerX="50"
+            android:centerY="50"
+            android:gradientRadius="20">
+            <item
+                android:offset="0"
+                android:color="#FFC107"/>
+            <item
+                android:offset="1"
+                android:color="#FF9800"/>
+        </gradient>
+    </path>
+
+    <!-- Cloud -->
+    <group
+        android:translateX="10"
+        android:translateY="50">
+        <path
+            android:fillColor="#B0BEC5"
+            android:pathData="M60,10a10,10 0,0 0,-20,0a15,15 0,0 0,-15,15h30a10,10 0,0 0,10,-10Z" />
+        <path
+            android:fillColor="#CFD8DC"
+            android:pathData="M50,10a15,15 0,0 1,30,0a15,15 0,0 1,-30,0Z" />
+    </group>
+
+    <!-- Raindrops -->
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M30,75c0,0.7,-0.5,1.5,-1.5,1.5s-1.5,-0.8,-1.5,-1.5c0,-1,1.5,-3,1.5,-3s1.5,2,1.5,3Z" />
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M40,75c0,0.7,-0.5,1.5,-1.5,1.5s-1.5,-0.8,-1.5,-1.5c0,-1,1.5,-3,1.5,-3s1.5,2,1.5,3Z" />
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M50,75c0,0.7,-0.5,1.5,-1.5,1.5s-1.5,-0.8,-1.5,-1.5c0,-1,1.5,-3,1.5,-3s1.5,2,1.5,3Z" />
+
+</vector>
