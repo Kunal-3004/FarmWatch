@@ -19,27 +19,19 @@
         android:fillColor="#A1887F"
         android:pathData="M0,50 Q20,45 40,50 T100,50 L100,70 L0,70 Z" />
 
-    <!-- Small Rocks or Textures -->
-    <circle
-        android:cx="15"
-        android:cy="85"
-        android:r="2"
-        android:fillColor="#4E342E" />
-    <circle
-        android:cx="45"
-        android:cy="75"
-        android:r="2"
-        android:fillColor="#4E342E" />
-    <circle
-        android:cx="70"
-        android:cy="65"
-        android:r="2"
-        android:fillColor="#4E342E" />
-    <circle
-        android:cx="85"
-        android:cy="80"
-        android:r="2"
-        android:fillColor="#4E342E" />
+    <!-- Small Rocks or Textures as Paths -->
+    <path
+        android:fillColor="#4E342E"
+        android:pathData="M15,83 A2,2 0 1,0 15,87 A2,2 0 1,0 15,83" />
+    <path
+        android:fillColor="#4E342E"
+        android:pathData="M45,73 A2,2 0 1,0 45,77 A2,2 0 1,0 45,73" />
+    <path
+        android:fillColor="#4E342E"
+        android:pathData="M70,63 A2,2 0 1,0 70,67 A2,2 0 1,0 70,63" />
+    <path
+        android:fillColor="#4E342E"
+        android:pathData="M85,78 A2,2 0 1,0 85,82 A2,2 0 1,0 85,78" />
 
     <!-- Grass on Top of Soil -->
     <path

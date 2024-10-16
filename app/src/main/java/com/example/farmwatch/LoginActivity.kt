@@ -106,7 +106,7 @@ class LoginActivity : AppCompatActivity(), AuthListener {
 
             }
         })
-        Intent(this, MainActivity::class.java).also {
+        Intent(this, HomeActivity::class.java).also {
             startActivity(it)
         }
     }

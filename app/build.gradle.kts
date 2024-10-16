@@ -54,5 +54,7 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     implementation (libs.play.services.auth.v2050)
+    implementation (libs.androidx.drawerlayout)
+    implementation (libs.material.v1130alpha05)
     implementation(kotlin("script-runtime"))
 }
