@@ -14,6 +14,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.farmwatch.databinding.ActivityHomeBinding
 import com.example.farmwatch.fragment.AirFragment
+import com.example.farmwatch.fragment.PlantDiseaseFragment
 import com.example.farmwatch.fragment.SoilFragment
 import com.example.farmwatch.fragment.WeatherFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -113,7 +114,7 @@ class HomeActivity : AppCompatActivity() {
 
         bottomNavigationView.visibility = if (currentFragment is SoilFragment ||
             currentFragment is WeatherFragment ||
-            currentFragment is AirFragment) {
+            currentFragment is AirFragment || currentFragment is PlantDiseaseFragment) {
             View.GONE
         } else {
             View.VISIBLE

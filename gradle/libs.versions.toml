@@ -1,12 +1,15 @@
 [versions]
 agp = "8.5.2"
+converterGson = "2.9.0"
 drawerlayout = "1.2.0"
+kodeinDiGenericJvm = "6.2.1"
 kotlin = "1.9.0"
 coreKtx = "1.13.1"
 junit = "4.13.2"
 junitVersion = "1.2.1"
 espressoCore = "3.6.1"
 appcompat = "1.7.0"
+lifecycleExtensions = "2.2.0"
 material = "1.12.0"
 activity = "1.9.2"
 constraintlayout = "2.1.4"
@@ -21,14 +24,20 @@ media3CommonKtx = "1.4.1"
 navigationRuntimeKtx = "2.8.2"
 navigationFragment = "2.8.2"
 navigationUiKtx = "2.8.2"
+imageLabelingCommon = "18.1.0"
+imageLabelingCustomCommon = "17.0.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 androidx-drawerlayout = { module = "androidx.drawerlayout:drawerlayout", version.ref = "drawerlayout" }
+androidx-lifecycle-extensions = { module = "androidx.lifecycle:lifecycle-extensions", version.ref = "lifecycleExtensions" }
+converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "converterGson" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+kodein-di-framework-android-x = { module = "org.kodein.di:kodein-di-framework-android-x", version.ref = "kodeinDiGenericJvm" }
+kodein-di-generic-jvm = { module = "org.kodein.di:kodein-di-generic-jvm", version.ref = "kodeinDiGenericJvm" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
@@ -42,6 +51,9 @@ androidx-media3-common-ktx = { group = "androidx.media3", name = "media3-common-
 androidx-navigation-runtime-ktx = { group = "androidx.navigation", name = "navigation-runtime-ktx", version.ref = "navigationRuntimeKtx" }
 androidx-navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment", version.ref = "navigationFragment" }
 androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigationUiKtx" }
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "converterGson" }
+image-labeling-common = { group = "com.google.mlkit", name = "image-labeling-common", version.ref = "imageLabelingCommon" }
+image-labeling-custom-common = { group = "com.google.mlkit", name = "image-labeling-custom-common", version.ref = "imageLabelingCustomCommon" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

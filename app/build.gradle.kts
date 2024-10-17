@@ -53,6 +53,8 @@ dependencies {
     implementation(libs.androidx.navigation.runtime.ktx)
     implementation(libs.androidx.navigation.fragment)
     implementation(libs.androidx.navigation.ui.ktx)
+    implementation(libs.image.labeling.common)
+    implementation(libs.image.labeling.custom.common)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -60,4 +62,9 @@ dependencies {
     implementation (libs.androidx.drawerlayout)
     implementation (libs.material.v1130alpha05)
     implementation(kotlin("script-runtime"))
+    implementation (libs.retrofit)
+    implementation (libs.converter.gson)
+    implementation (libs.androidx.lifecycle.extensions)
+    implementation (libs.kodein.di.generic.jvm)
+    implementation (libs.kodein.di.framework.android.x)
 }

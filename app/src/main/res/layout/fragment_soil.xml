@@ -85,7 +85,7 @@
                         android:backgroundTint="#0060AA39"
                         android:textSize="18sp"
                         android:hint="value 1"
-                        android:textColor="#fff"
+                        android:textColor="@color/greenlite"
                         android:inputType="numberDecimal"
                         android:textStyle="bold" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -106,7 +106,7 @@
                         android:backgroundTint="#0060AA39"
                         android:textSize="18sp"
                         android:hint="value 2"
-                        android:textColor="#fff"
+                        android:textColor="@color/greenlite"
                         android:inputType="numberDecimal"
                         android:textStyle="bold" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -127,7 +127,7 @@
                         android:backgroundTint="#0060AA39"
                         android:textSize="18sp"
                         android:hint="value 3"
-                        android:textColor="#fff"
+                        android:textColor="@color/greenlite"
                         android:inputType="numberDecimal"
                         android:textStyle="bold" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -148,7 +148,7 @@
                         android:backgroundTint="#0060AA39"
                         android:textSize="18sp"
                         android:hint="value 4"
-                        android:textColor="#fff"
+                        android:textColor="@color/greenlite"
                         android:inputType="numberDecimal"
                         android:textStyle="bold" />
                 </com.google.android.material.textfield.TextInputLayout>

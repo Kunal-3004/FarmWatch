@@ -118,8 +118,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto_bold"
-                android:text="Vegetable Classification"
-                android:textSize="26sp"
+                android:text="Plant Disease Classification"
+                android:textSize="24sp"
                 android:padding="20dp"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
