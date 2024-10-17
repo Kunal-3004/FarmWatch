@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_dash">
+
+    <fragment
+        android:id="@+id/nav_dash"
+        android:name="com.example.farmwatch.fragment.DashboardFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_dashboard" >
+
+        <action
+            android:id="@+id/action_dashboardFragment_to_airQualityFragment"
+            app:destination="@id/nav_air" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_cropProductionAnalysisFragment"
+            app:destination="@id/nav_cpa" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_vegetableClassificationFragment"
+            app:destination="@id/nav_vegetable" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_riceTypeClassificationFragment"
+            app:destination="@id/nav_rtc" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_soilFragment"
+            app:destination="@+id/nav_soil"/>
+        <action
+            android:id="@+id/action_dashboardFragment_to_weatherFragment"
+            app:destination="@+id/nav_weather"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_soil"
+        android:name="com.example.farmwatch.fragment.SoilFragment"
+        android:label="Soil"
+        tools:layout="@layout/fragment_soil" />
+
+    <fragment
+        android:id="@+id/nav_weather"
+        android:name="com.example.farmwatch.fragment.WeatherFragment"
+        android:label="Weather"
+        tools:layout="@layout/fragment_weather" />
+
+    <fragment
+        android:id="@+id/nav_air"
+        android:name="com.example.farmwatch.fragment.AirFragment"
+        android:label="Air"
+        tools:layout="@layout/fragment_air" />
+
+    <fragment
+        android:id="@+id/nav_cpa"
+        android:name="com.example.farmwatch.fragment.CPAFragment"
+        android:label="CPA"
+        tools:layout="@layout/fragment_c_p_a" />
+
+    <fragment
+        android:id="@+id/nav_vegetable"
+        android:name="com.example.farmwatch.fragment.VegetableFragment"
+        android:label="Vegetable"
+        tools:layout="@layout/fragment_vegetable" />
+
+    <fragment
+        android:id="@+id/nav_rtc"
+        android:name="com.example.farmwatch.fragment.RTCFragment"
+        android:label="RTC"
+        tools:layout="@layout/fragment_r_t_c" />
+
+</navigation>

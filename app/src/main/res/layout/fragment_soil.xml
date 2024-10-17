@@ -1,15 +1,198 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".SoilFragment">
+    android:background="@drawable/soil_bg"
+    tools:context=".fragment.SoilFragment">
 
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_height="wrap_content">
 
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                app:title="Soil Analysis"
+                app:titleTextAppearance="@style/Toolbar.TitleText"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                app:titleTextColor="@color/white" />
+        </com.google.android.material.appbar.AppBarLayout>
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:text="Required Data for Analysis"
+            android:textSize="28sp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/roboto_bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
 
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card1"
+            android:layout_width="match_parent"
+            android:layout_height="440dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            app:cardCornerRadius="8dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/heading">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-</FrameLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Past Moisture Values"
+                    android:layout_gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/mos1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="#60AA39"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/val_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#0060AA39"
+                        android:textSize="18sp"
+                        android:hint="value 1"
+                        android:textColor="#fff"
+                        android:inputType="numberDecimal"
+                        android:textStyle="bold" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/mos2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="#60AA39"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/val_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#0060AA39"
+                        android:textSize="18sp"
+                        android:hint="value 2"
+                        android:textColor="#fff"
+                        android:inputType="numberDecimal"
+                        android:textStyle="bold" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/mos3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="#60AA39"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/val_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#0060AA39"
+                        android:textSize="18sp"
+                        android:hint="value 3"
+                        android:textColor="#fff"
+                        android:inputType="numberDecimal"
+                        android:textStyle="bold" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/mos4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="#60AA39"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/val_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#0060AA39"
+                        android:textSize="18sp"
+                        android:hint="value 4"
+                        android:textColor="#fff"
+                        android:inputType="numberDecimal"
+                        android:textStyle="bold" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/predict_soil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/all_buttons"
+                    android:text="Predict"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/roboto"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/mois_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card1"
+            android:text="Moisture Value : "
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/result_soil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="65dp"
+            android:fontFamily="@font/roboto_black"
+            android:text="12.99"
+            android:visibility="invisible"
+            android:textColor="#45A612"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/mois_val"
+            app:layout_constraintTop_toBottomOf="@id/card1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

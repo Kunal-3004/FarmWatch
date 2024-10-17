@@ -1,13 +1,16 @@
-package com.example.farmwatch
+package com.example.farmwatch.fragment
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import com.example.farmwatch.R
 
 
-class DashboardFragment : Fragment() {
+class CPAFragment : Fragment() {
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -17,6 +20,8 @@ class DashboardFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_dashboard, container, false)
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_c_p_a, container, false)
     }
+
 }

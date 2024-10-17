@@ -11,8 +11,10 @@
         android:id="@+id/miItem3"
         android:title="Soil Analysis"/>
     <item
+        android:id="@+id/my_profile"
+        android:title="My Profile"/>
+    <item
         android:id="@+id/miItem4"
         android:title="Log Out"/>
-
 
 </menu>
