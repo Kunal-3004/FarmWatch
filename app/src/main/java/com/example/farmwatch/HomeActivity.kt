@@ -77,6 +77,9 @@ class HomeActivity : AppCompatActivity() {
                     navController.navigate(R.id.nav_soil)
                     bottomNavigationView.visibility = View.GONE
                 }
+                R.id.my_profile ->{
+                    startActivity(Intent(this, ProfileActivity::class.java))
+                }
             }
             drawerLayout.closeDrawers()
             true
