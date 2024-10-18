@@ -57,6 +57,7 @@ dependencies {
     implementation(libs.image.labeling.custom.common)
     implementation(libs.play.services.maps)
     implementation(libs.play.services.location)
+    implementation(libs.firebase.storage.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -70,4 +71,6 @@ dependencies {
     implementation (libs.kodein.di.generic.jvm)
     implementation (libs.kodein.di.framework.android.x)
     implementation (libs.okhttp3.logging.interceptor)
+    implementation (libs.androidx.room.ktx)
+    implementation (libs.glide)
 }
