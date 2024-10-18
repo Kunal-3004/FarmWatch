@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.viewModels
@@ -38,11 +39,10 @@ class SoilFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val moistureTextView = binding.resultSoil
 
         viewModel.soilMoistureData.observe(viewLifecycleOwner, Observer { soilData ->
             if (soilData != null) {
-                moistureTextView.text = "Moisture: ${soilData.moisture}"
+                showResultDialog(soilData.toString())
             } else {
                 Toast.makeText(requireContext(), "Failed to fetch moisture data", Toast.LENGTH_LONG)
                     .show()
@@ -96,9 +96,17 @@ class SoilFragment : Fragment() {
                 Toast.makeText(requireContext(), "Please enter valid numbers in all fields", Toast.LENGTH_LONG).show()
             } else {
                 viewModel.fetchSoilMoisture(d0, d1, d2, d3)
-                binding.resultSoil.visibility = View.VISIBLE
             }
         }
+    }
+    private fun showResultDialog(result: String) {
+        AlertDialog.Builder(requireContext())
+            .setTitle("Soil Moisture Prediction Result")
+            .setMessage("The predicted Moisture value is: $result")
+            .setPositiveButton("OK") { dialog, _ ->
+                dialog.dismiss()
+            }
+            .show()
     }
     override fun onResume() {
         super.onResume()

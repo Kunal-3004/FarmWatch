@@ -84,6 +84,7 @@ class HomeActivity : AppCompatActivity() {
 
         bottomNavigationView = binding.appBarMain.bottomNav
         bottomNavigationView.setupWithNavController(navController)
+
         bottomNavigationView.setOnNavigationItemSelectedListener { menuItem ->
             when (menuItem.itemId) {
                 R.id.nav_dash -> {

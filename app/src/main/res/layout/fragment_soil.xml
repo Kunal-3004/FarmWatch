@@ -166,34 +166,5 @@
                     android:layout_marginTop="20dp"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
-
-        <TextView
-            android:id="@+id/mois_val"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/card1"
-            android:text="Moisture Value : "
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            android:textSize="24sp"
-            android:layout_marginEnd="40dp"
-            android:layout_marginTop="20dp"/>
-
-        <TextView
-            android:id="@+id/result_soil"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="22dp"
-            android:layout_marginEnd="65dp"
-            android:fontFamily="@font/roboto_black"
-            android:text="12.99"
-            android:visibility="invisible"
-            android:textColor="#45A612"
-            android:textSize="22sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/mois_val"
-            app:layout_constraintTop_toBottomOf="@id/card1" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>

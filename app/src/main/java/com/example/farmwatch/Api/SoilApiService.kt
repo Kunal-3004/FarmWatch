@@ -24,7 +24,7 @@ interface SoilApiInterface {
 }
 
 object SoilApiService {
-    private const val BASE_URL = "https://api.imgflip.com"
+    private const val BASE_URL = "https://soilapi-4.onrender.com"
 
     val api: SoilApiInterface by lazy {
         Retrofit.Builder()
