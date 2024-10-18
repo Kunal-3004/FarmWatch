@@ -87,13 +87,17 @@ class SoilFragment : Fragment() {
             }
         }
         binding.predictSoil.setOnClickListener {
-            val d0 = binding.val1.text.toString().toIntOrNull() ?: 0
-            val d1 = binding.val2.text.toString().toIntOrNull() ?: 0
-            val d2 = binding.val3.text.toString().toIntOrNull() ?: 0
-            val d3 = binding.val4.text.toString().toIntOrNull() ?: 0
+            val d0 = binding.val1.text.toString().toFloatOrNull()
+            val d1 = binding.val2.text.toString().toFloatOrNull()
+            val d2 = binding.val3.text.toString().toFloatOrNull()
+            val d3 = binding.val4.text.toString().toFloatOrNull()
 
-            viewModel.fetchSoilMoisture(d0, d1, d2, d3)
-            binding.resultSoil.visibility=View.VISIBLE
+            if (d0 == null || d1 == null || d2 == null || d3 == null) {
+                Toast.makeText(requireContext(), "Please enter valid numbers in all fields", Toast.LENGTH_LONG).show()
+            } else {
+                viewModel.fetchSoilMoisture(d0, d1, d2, d3)
+                binding.resultSoil.visibility = View.VISIBLE
+            }
         }
     }
     override fun onResume() {

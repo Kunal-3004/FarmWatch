@@ -55,6 +55,8 @@ dependencies {
     implementation(libs.androidx.navigation.ui.ktx)
     implementation(libs.image.labeling.common)
     implementation(libs.image.labeling.custom.common)
+    implementation(libs.play.services.maps)
+    implementation(libs.play.services.location)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -67,4 +69,5 @@ dependencies {
     implementation (libs.androidx.lifecycle.extensions)
     implementation (libs.kodein.di.generic.jvm)
     implementation (libs.kodein.di.framework.android.x)
+    implementation (libs.okhttp3.logging.interceptor)
 }

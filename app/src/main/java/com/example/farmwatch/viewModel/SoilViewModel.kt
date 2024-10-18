@@ -12,7 +12,7 @@ import kotlinx.coroutines.launch
 class SoilViewModel(private val repository: SoilRepository) : ViewModel() {
 
     val soilMoistureData: LiveData<SoilAPIResponse> = repository.moistureLiveData
-    fun fetchSoilMoisture(d0: Int, d1: Int, d2: Int, d3: Int) {
+    fun fetchSoilMoisture(d0: Float, d1: Float, d2: Float, d3: Float) {
         viewModelScope.launch(Dispatchers.IO) {
             repository.fetchSoilData(d0, d1, d2, d3)
         }

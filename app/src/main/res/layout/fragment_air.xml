@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/air_bg"
+    android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragment.AirFragment">
 
@@ -23,4 +25,211 @@
             app:titleTextColor="@color/white" />
     </com.google.android.material.appbar.AppBarLayout>
 
-</FrameLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:text="Required Data for Analysis"
+            android:textSize="28sp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:cardCornerRadius="8dp"
+            app:layout_constraintTop_toBottomOf="@id/heading">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Air Quality Prediction"
+                    android:layout_gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/annual_temp"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/val_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:hint="Temperature"
+                        android:textColor="@color/greenlite"
+                        android:inputType="numberDecimal" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/max_temp"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/val_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#0060AA39"
+                        android:textSize="14sp"
+                        android:hint="Maximum temperature"
+                        android:textColor="@color/greenlite"
+                        android:inputType="numberDecimal"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/min_temp"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/val_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#0060AA39"
+                        android:textSize="14sp"
+                        android:hint="Minimum temperature"
+                        android:textColor="@color/greenlite"
+                        android:inputType="numberDecimal" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/fog_day"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/sea_lvl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#0060AA39"
+                        android:textSize="14sp"
+                        android:hint="Sea level pressure"
+                        android:textColor="@color/greenlite"
+                        android:inputType="numberDecimal" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tomado_box"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/humidity"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:backgroundTint="#0060AA39"
+                        android:textSize="14sp"
+                        android:hint="Humidity"
+                        android:textColor="@color/greenlite"
+                        android:inputType="numberDecimal" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/snow_day"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/visibility"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#0060AA39"
+                        android:textSize="14sp"
+                        android:hint="Visibility distance(in km or m)"
+                        android:textColor="@color/greenlite"
+                        android:inputType="numberDecimal" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/wind_speed"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/wspeed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:hint="Wind speed"
+                        android:textColor="@color/greenlite"
+                        android:inputType="numberDecimal" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/max_wind_speed"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/maxWspeed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:hint="Max wind speed"
+                        android:textColor="@color/greenlite"
+                        android:inputType="numberDecimal" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/predict_air"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/all_buttons"
+                    android:text="Predict"
+                    app:backgroundTint="#3162C6"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/roboto"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

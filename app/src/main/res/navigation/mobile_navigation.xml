@@ -29,6 +29,9 @@
         <action
             android:id="@+id/action_dashboardFragment_to_weatherFragment"
             app:destination="@+id/nav_weather"/>
+        <action
+            android:id="@+id/action_dashboardFragment_to_mapFragment"
+            app:destination="@+id/nav_map"/>
     </fragment>
 
     <fragment
@@ -66,5 +69,11 @@
         android:name="com.example.farmwatch.fragment.RTCFragment"
         android:label="RTC"
         tools:layout="@layout/fragment_r_t_c" />
+    <fragment
+        android:id="@+id/nav_map"
+        android:name="com.example.farmwatch.fragment.MapFragment"
+        android:label="Map"
+        tools:layout="@layout/fragment_map" />
+
 
 </navigation>

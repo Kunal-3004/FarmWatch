@@ -9,14 +9,14 @@ import com.google.gson.annotations.SerializedName
 
 data class SoilAPIResponse(
     @SerializedName("moisture")
-    val moisture: Int
+    val moisture: Float
 )
 
 data class SoilAPIRequest(
-    val d0: Int,
-    val d1: Int,
-    val d2: Int,
-    val d3: Int
+    val d0: Float,
+    val d1: Float,
+    val d2: Float,
+    val d3: Float
 )
 interface SoilApiInterface {
     @POST("/predict")

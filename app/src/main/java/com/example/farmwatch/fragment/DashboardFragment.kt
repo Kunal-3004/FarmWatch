@@ -53,6 +53,9 @@ class DashboardFragment : Fragment() {
         binding.card4.setOnClickListener {
             findNavController().navigate(R.id.action_dashboardFragment_to_riceTypeClassificationFragment)
         }
+        binding.card5.setOnClickListener {
+            findNavController().navigate(R.id.action_dashboardFragment_to_mapFragment)
+        }
     }
     override fun onResume() {
         super.onResume()
